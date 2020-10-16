@@ -1,21 +1,10 @@
-# 次の連想配列(member)の中から,
-# 田中さんのオブジェクトを抽出する
-# findTanakaという関数,変数を作成しなさい。
+# 次のtripsという連想配列に格納されたdistanceの合計を求めて、
+# totalDistanceという変数に格納して下さい。
 
-def findTanaka
-  members = [
-    { name: "松井", age: 39, sex: "male" },
-    { name: "今田", age: 34, sex: "female" },
-    { name: "鈴木", age: 24, sex: "male" },
-    { name: "山田", age: 56, sex: "male" },
-    { name: "田中", age: 89, sex: "female" }
-  ]
+trips = [
+  { distance: 34 },
+  { distance: 12 },
+  { distance: 1 }
+]
 
-  members.each do |h|
-    if h[:name] == "田中"
-      findTanaka = h
-    end
-  end
-end
-
-findTanaka
+trips.inject(0){ |sum, hash| sum + hash[:distance]}
