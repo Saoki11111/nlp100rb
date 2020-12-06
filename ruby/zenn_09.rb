@@ -6,8 +6,12 @@ users = [
   { id: 3, name: "織田" }
 ]
 
+getName = []
+
 users.each do |k|
   if k.key?(:name) == true
-    getName = k
+    getName.push(k)
   end
 end
+
+p getName

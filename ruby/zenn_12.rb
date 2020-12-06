@@ -8,4 +8,4 @@ users = [
   { id: 4, hasSubmitted: true }
 ]
 
-hasSubmitted = users.all?
+p hasSubmitted = users.all?
