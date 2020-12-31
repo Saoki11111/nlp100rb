@@ -10,7 +10,7 @@ function getNameOver($members)
     if($member["age"] >= 35){
       var_dump($member["name"]);
     }
-  };
+  }
 }
 
 $members = [
